@@ -1,0 +1,60 @@
+@import "../6-utilities/initial-variables.scss";
+
+.tabs {
+  -webkit-overflow-scrolling: touch;
+  // align-items: stretch;
+  // display: flex;
+  // font-size: 1rem;
+  // justify-content: space-between;
+  // overflow: hidden;
+  // overflow-x: auto;
+  // white-space: nowrap;
+
+  a {
+	  align-items: center;
+	  color: #4a4a4a;
+	  display: flex;
+	  justify-content: center;
+	  margin-bottom: -1px;
+	  padding: 0.5em 1em;
+	  vertical-align: top;
+	}
+
+  a:hover {
+	  border-bottom-color: #363636;
+	  color: #363636;
+	}
+
+  li:not(:last-child) > a:after {
+	  content: "/";
+	  color: #ddd;
+	  font-weight: bold;
+	  margin-left: 15px;
+  }
+
+  li {
+	  display: block;
+	}
+
+  li.is-active a {
+	  border-bottom: 1px solid #3273dc;
+	  color: #3273dc;
+	}
+
+  ul {
+	  align-items: center;
+	  border: 1px solid #dbdbdb;
+	  display: flex;
+	  flex-grow: 1;
+	  flex-shrink: 0;
+	  justify-content: flex-start;
+	  border: 1px solid #ddd;
+	}
+
+  &-element {
+	padding: 0 10px;
+	padding-right: 20px;
+	border: 1px solid #ddd;
+  }
+}
+

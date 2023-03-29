@@ -1,0 +1,22 @@
+@import '../6-utilities/initial-variables';
+
+.treeView{
+
+  	.treeDropdown ul li{
+        padding: 0px 20px;
+        .inline-form-input{
+            display: inline;
+            float: left;
+  	     }
+        .inline-form{
+            display: inline-block;
+            width: calc(100% - 20px);
+        }
+    }
+}
+#buktiSetor{
+    padding: 20px;
+    >.linetree{
+        margin: 10px 0px;
+    }
+}

@@ -1,0 +1,38 @@
+@import "../6-utilities/initial-variables.scss";
+
+.pagination {
+	padding: 10px;
+	background-color: #fff;
+	width: initial;
+
+	li {
+		margin: 0 10px;
+		color: nth($base_blue,1);
+		background-color: nth($base_blue,2);
+	}
+	.list{
+		margin: 0;
+	}
+	li:hover {
+		background-color: #f8f8f8;
+	}
+
+	li:first-child {
+		
+	}
+
+	li:last-child {
+		
+	}
+	.paginate_button.active{
+ 
+		a{
+			background-color: nth($base_blue,1);
+			color: nth($base_blue,2);
+			font-weight: bold;
+		}
+
+	}
+}
+
+

@@ -1,0 +1,372 @@
+@import '../6-utilities/initial-variables';
+
+@font-face {
+    font-family: 'Brandon_bld';
+    src: url(../../font/font-pesona/Brandon_bld.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Brandon_reg';
+    src: url(../../font/font-pesona/Brandon_reg.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Better_Signature_Font';
+    src: url(../../font/font-pesona/Better_Signature_Font.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'AngleciaProDisplay-Italic';
+    src: url(../../font/font-pesona/AngleciaProDisplay-Italic.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'AngleciaProDisplay-Regular';
+    src: url(../../font/font-pesona/AngleciaProDisplay-Regular.otf) format('opentype');
+}
+
+$brandon-reg: 'Brandon_reg';
+$brandon-bold: 'Brandon_bld';
+$better-sg: 'Better_Signature_Font';
+$angelica-it: 'AngleciaProDisplay-Italic';
+$angelica-reg: 'AngleciaProDisplay-Regular';
+
+$primary : nth($primary,1);
+$danger : nth($danger,1);
+$success : nth($success,1);
+$warning : nth($warning,1);
+
+$black: #1F2124;
+$white: #fff;
+$bg-color : #F4F1E9;
+$primary: #A07F2B;
+$primary-dark: #7B725E;
+$primary-light: #D6D2CA;
+$secondary: #828D42;
+
+$grey: #48443B;
+$light-grey: #D6D2CA;
+$dark-grey: #8597AA;
+
+$background-body : $bg-color;
+
+$box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body.body-login-wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $bg-color!important;
+
+    .main-content {
+    	top: 0!important;
+      margin-top: 0 !important;
+      height: 100%;
+
+      .wrapper {
+        height: 100%;
+        background: url('../../images/header-bg.jpg') no-repeat center center;
+        background-size: cover;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .col {
+          z-index: 3;
+        }
+      }
+
+    	fieldset {
+			padding: 0.35em 0 0.75em !important;
+
+			input {
+				width: 100% !important;
+			}
+		}
+    }
+}
+
+
+
+canvas{
+    background-color: transparent;
+    z-index: 0;
+    position: absolute;
+}
+
+body {
+	// background-color: $background-body;
+	// background-image: url(../../source/img/regas-bg.jpg);
+	// background-size: cover;
+	// background-repeat: no-repeat;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    background: url('../../images/img/bg-image.jpg') no-repeat center center;
+    background-size: cover;
+
+    transform: scale(1.1);
+    display: none;
+  }
+
+.overlay {
+	background-color: rgba(26, 56, 111, 0.45);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.login-wrapper {
+	// height: 100vh;
+}
+.signupWrapper{
+  display: block;
+}
+.signupWrapper .form .col{
+  float: left;
+  display: inline-block;
+}
+.form-login {
+	// width: 100%;
+	// display: flex;
+	// flex-wrap: wrap;
+	// justify-content: center;
+	// background-color: rgba(21, 60, 121, 0.74);
+	// position: relative;
+	// box-shadow: $box-shadow;
+	// border-radius: $radius-large;
+
+	// .group-start, .group-end {
+	// 	width: 50%;
+	// 	height: 400px;
+	// }
+
+	// .group-start {
+	// 	background-color: rgba(0,0,0,0.4);
+	// 	border-top-left-radius: $radius-large;
+	// 	border-bottom-left-radius: $radius-large;
+
+	// 	.logo-wrapper {
+	// 		background-color: #fff;
+	// 		padding: 10px;
+	// 		border-radius: $radius;
+	// 		width: 50%;
+	// 		position: relative;
+	// 		margin-top: 20px;
+	// 		margin-left: -15px;
+	// 		box-shadow: $box-shadow;
+
+	// 		img {
+	// 			height: 50px;
+	// 		}
+	// 	}
+
+	// 	.logo-title {
+	// 		color: #fff;
+	// 		font-size: 3rem;
+	// 		font-weight: 300;
+	// 		padding-left: 40px;
+	// 		padding-top: 20px;
+
+	// 		.line {
+	// 			display: flex;
+	// 			width: 100%;
+	// 			align-items: flex-end;
+	// 			justify-content: flex-end;
+	// 			margin-left: -10rem;
+	// 			margin-top: 15px;
+
+	// 			span {
+	// 				height: 4px;
+	// 				width: 60px;
+	// 				display: inline-block;
+	// 				background-color: #fff;
+	// 			}
+
+	// 			span:nth-child(1) {
+	// 				background-color: #ed1b2f;
+	// 			}
+
+	// 			span:nth-child(2) {
+	// 				background-color: #acc32b;
+	// 			}
+
+	// 			span:nth-child(3) {
+	// 				background-color: #006cb7;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	// .group-end {
+	// 	background-color: #fff;
+	// 	border-top-right-radius: $radius-large;
+	// 	border-bottom-right-radius: $radius-large;
+	// 	padding: 20px;
+
+	// 	.field {
+	// 		margin: 65px auto;
+
+	// 		.control {
+	// 			input {
+	// 				width: 100%;
+	// 			}
+	// 		}
+	// 	}	
+	// }
+
+}
+
+.form-login {
+  padding: 10px;
+  background-color: rgba(#fff, .5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  display: flex;
+  height: 300px;
+  max-height: 350px;
+  border-radius: 6px;
+  transition: 0.5s;
+  // position: absolute;
+  // top: 8rem;
+
+  .group-start {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    // visibility: hidden;
+    // opacity: 0;
+
+    h1 {
+      color: #fff;
+      font-size: 35px !important;
+      // padding: 1rem;
+      width: 100%;
+      position: relative;
+      // top: 2rem;
+      font-family: $angelica-reg;
+
+      span {
+        font-family: $better-sg;
+        font-size: 100px !important;
+        position: absolute;
+        width: calc(100% + 250px);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba($primary, .8);
+        z-index: -1;
+      }
+    }
+
+    p {
+      width: 100%;
+      padding: 1rem;
+      color: #fff;
+      position: relative;
+      top: -2rem;
+      font-size: 14px;
+    }
+
+    img {
+      height: 200px;
+      position: absolute;
+      margin-left: 50px;
+      margin-top: 50px;
+    }
+  }
+
+  .group-end {
+    align-self: center;
+    width: 35%;
+    
+    $btn-group-p : 1.75rem;
+    .panel {
+      padding: 1.75rem 1.75rem 0;
+      width: 100%!important;
+      img {
+        height: 100px;
+      }
+
+      .field {
+        // height: 500px;
+        margin: auto 0;
+
+        .title {
+          display: none;
+        }
+
+        .form {
+
+          .form {
+
+            .btn-group {
+
+              .button {
+                background-color: $primary !important;
+                font-family: $brandon-bold !important;
+                letter-spacing: 1.25px;
+              }
+            }
+          }
+        }
+      }
+
+      .control:not(:last-child) {
+       
+        .icon {
+          color: #113164;
+        }
+
+        .input {
+          padding: 8px 18px;
+          border-radius: 4px;
+          width: width(18);
+          transition: all .3s;
+        }
+
+        input:focus {
+          @include placeholder {
+            color: #181e4e;
+          }
+        }
+
+        .button {
+          width: 100%;
+          color: #fff;
+          border-radius: 4px;
+          background-color: #3273dc;
+        }
+      }
+
+    }
+  }
+}
+

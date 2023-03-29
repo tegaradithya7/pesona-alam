@@ -1,0 +1,242 @@
+@import '../6-utilities/initial-variables';
+
+ul, #myUL {
+// <<<<<<< HEAD
+//   list-style-type: none;
+// }
+
+// #myUL {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// #myUL li {
+//   margin-left: 25px;
+// }
+
+// .caret {
+//   cursor: pointer;
+//   -webkit-user-select: none; /* Safari 3.1+ */
+//   -moz-user-select: none; /* Firefox 2+ */
+//   -ms-user-select: none; /* IE 10+ */
+//   user-select: none;
+// }
+
+// .caret::before {
+//   content: "\25B6";
+//   color: black;
+//   display: inline-block;
+//   margin-right: 6px;
+// }
+
+// .caret-down::before {
+//   -ms-transform: rotate(90deg); /* IE 9 */
+//   -webkit-transform: rotate(90deg); /* Safari */'
+//   transform: rotate(90deg);  
+// }
+
+// .nested {
+//   display: none;
+// }
+
+// .active {
+//   display: block;
+// }
+
+// .is-tree-child {
+// 	margin-right: 25px;
+// }
+// =======
+    list-style-type: none;
+  }
+
+  #myUL {
+    margin: 0;
+    padding: 5px 15px;
+  }
+
+  .caret {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+  }
+
+  .caret::before {
+    /*content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;*/
+  }
+
+  .nested {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    margin-left: 37px;
+    margin-top: 7px;
+    transition: all .3s;
+  }
+
+  .nested.active {
+    visibility: visible;
+    max-height: 300px;
+    opacity: 1;
+    transition: all .3s;
+  }
+
+  // .nested.active > li .icon:before {
+  //   content: "";
+  //   position: absolute;
+  //   border-left: 1px solid #ddd;
+  //   border-bottom: 1px solid #ddd;
+  //   width: 20px;
+  //   height: 37px;
+  //   margin-left: -32px;
+  //   margin-top: -24px;
+  // }
+
+  // .nested.active > li .icon:after {
+  //   content: "";
+  //   position: absolute;
+  //   border-left: 1px solid #ddd;
+  //   border-bottom: 1px solid #ddd;
+  //   // width: 20px;
+  //   height: 37px;
+  //   margin-left: -42px;
+  //   margin-top: 4px;
+  // }
+
+  // .nested.active > li:last-child .icon:after {
+  //   height: 25px;
+  //   // margin-top: -10px;    
+  // }
+
+  // .nested.active:before {
+  //   // content: "";
+  //   // position: absolute;
+  //   // border-left: 1px solid #ddd;
+  //   // width: 20px;
+  //   // height: 37px;
+  //   // margin-left: -27px;
+  //   // margin-top: -20px;
+  // }
+
+  // .nested.active > li:first-child .icon:before {
+  //   height: 15px;
+  //   margin-top: -3px;
+  // }
+
+  .icon.tree {
+    margin-right: 15px;
+    padding: 1px 7px;
+    background-color: #f8f8f8;
+    color: #788493;
+    border-radius: 15px;
+  }
+
+  .icon.tree.active {
+    background-color: nth($success,1);
+    color: #fff;
+  }
+
+  .icon.tree i {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .icon.tree.active i {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  #myUL li {
+    /*border-left: 1px solid #ddd;*/
+    /*padding-left: 7px;*/
+    // margin-bottom: 5px;
+    padding: 5px 0;
+  }
+
+  .nested {
+    /*border-left: 1px solid #ddd;*/
+  }
+
+  .nested li {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 5px 0;
+
+    span.icon.tree {
+      padding: 0 7px;
+    }
+
+  }
+
+  /*.nested li:before {
+    content: "";
+    display: block;
+    margin-right: 3px;
+    height: 1px;
+    width: 10px;
+    background-color: #ddd;
+  }*/
+
+  .nested li ul {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  ul li:not(:last-child) {
+    // border-bottom: 1px solid #ddd;
+  }
+
+  .nested li ul li {
+
+  }
+
+  ul.nested,
+  ul.nested ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.nested {
+    ul {
+      margin-left: 16px;
+    }
+    li {
+      margin-left: 12px;
+      border-left: thin solid #ddd;
+    }
+    li:last-child {
+      border-left: thin solid #ddd;
+    }
+    li:before {
+      width: 0.9em;
+      height: 0.6em;
+      margin-top: -4px;
+      margin-right: 0.1em;
+      vertical-align: top;
+      border-bottom: thin solid #ddd;
+      content: "";
+      display: inline-block;
+    }
+    li:last-child:before {
+      // border-left: thin solid #ddd;
+    }
+  }

@@ -1,0 +1,50 @@
+@import '../6-utilities/initial-variables';
+
+.dots-list {
+width: 100%;
+padding: 10px 0px;  
+}
+.dots-list ol {
+    padding-left: 230px;
+position: relative;
+margin-bottom: 20px;
+list-style: none !important;
+}
+.dots-list ol li {
+position: relative;
+margin-top: 0em;
+margin-bottom: 20px;
+word-break: break-word;
+}
+.dots-list ol li .date {
+    position: absolute;
+    left: -183px;
+    font-weight: bold;
+    font-size: 0.9em;
+    top: -2px;
+        line-height: 2em;
+}
+.dots-list ol li:before {
+content: "";
+background: #35a6cb; /*edit line colour*/
+position: absolute;
+width: 2px;
+top: 5px;
+bottom: -25px;
+left: -25px;
+}
+.dots-list ol li:after {
+content: "";
+background: #c7d8dd;  /*edit circle colour*/
+position: absolute;
+width: 13px;
+height: 13px;
+border-radius: 100%;
+border:2px solid #35a6cb; /*edit circle border colour*/
+top: 5px;
+left: -31px;
+}
+.dots-list ol li:last-child:before {
+content: "";
+background: rgba(0, 0, 0, 0);
+}

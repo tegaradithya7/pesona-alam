@@ -1,0 +1,35 @@
+@import '../6-utilities/initial-variables';
+
+.panel {
+  position: relative;
+  margin: 10px;
+  // width: width(1.75rem);//calc((50 % - 1.75rem) / 2)
+  background-color: white;
+  padding: 0.75em 1.75rem;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
+}
+  .panel .panel-heading {
+    height: 50%;
+    background-color: dodgerblue; }
+  .panel .panel-wrapper {
+    height: 50%;
+    background-color: red; }
+
+.collapse {
+  margin: 15px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.bordered {
+  margin: 10px 0;
+  padding: 0.75rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0); 
+  border: 1px solid #ddd;
+}
+
+.main {
+  top: -2rem; 
+}

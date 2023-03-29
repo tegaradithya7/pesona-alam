@@ -1,0 +1,48 @@
+@import '../6-utilities/initial-variables';
+
+.tabs {
+  -webkit-overflow-scrolling: touch; }
+  .tabs a {
+    align-items: center;
+    // color: #4a4a4a;
+    //display: flex;
+    justify-content: center;
+    margin-bottom: -1px;
+    padding: 0.5em 1em;
+    }
+  .tabs a:hover {
+
+  }
+  .tabs li {
+    display: block; }
+  .tabs li.is-active a {
+   }
+  .tabs > ul.ui-tabs-nav {
+    align-items: center;
+  
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    border: 1px solid #ddd;
+    list-style: none;
+
+    .tabs-item {
+      display: block;
+      list-style: none;
+
+      a {
+        align-items: center;
+        color: #4a4a4a;
+        display: flex;
+        justify-content: center;
+        margin-bottom: -1px;
+        vertical-align: top;
+        padding: 0.5em 1em;
+      }
+    }
+  }
+.tabs-element {
+  padding: 0 10px;
+  padding-right: 20px;
+  border: 1px solid #ddd;
+}

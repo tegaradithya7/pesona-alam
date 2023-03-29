@@ -1,0 +1,184 @@
+@import '../6-utilities/initial-variables';
+#auction-report-bar{
+	display: none;
+}
+.headerAuction{
+	line-height: 3em;
+}
+.lelang > .col{
+	display: inline-block;
+	float: left;
+}
+.lelang{
+	.table thead th {
+	    text-align: left;
+	    vertical-align: bottom;
+	    border-bottom: 2px solid #eceeef;
+	    cursor: pointer;
+	}
+}
+/*
+AUCTION STYLE
+*/
+
+#auction-report-bar{
+	display: none;
+}
+.warnColor{
+	color: #c0392b;
+}
+.auction-prize3{
+	color: #27ae60;
+}
+
+.lelang .panel{
+	//padding: 0;
+}
+.lelang .panel-heading{
+	margin-bottom: 0;
+}
+.lelang .panel-heading h4{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.lelang .panel-body{
+	border: none;
+}
+.lelang{
+	//margin: 0px -15px;
+}
+.table{
+	width: 100%;
+}
+.panel{
+	//width: 100%;
+}
+.panel > .table > tbody > tr > td{
+	padding: 8px 15px;
+}
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+.content-group-sm{
+	margin-bottom: 15px;
+}
+#chart-container{
+	// float: right;
+	display: inline-block;
+}
+.auction-button{
+	background: #2980b9;
+	width: 100%;
+	color: #fff;
+	padding: 10px;
+	font-weight: bold;
+	border: 0;
+}
+#timer{
+	font-size: 32px;
+	text-align: center;
+}
+.panel-body ul{
+	padding: 0;
+	margin: 0;
+}
+.noticeMedia{
+	border: #f39c12 1px solid;
+    color: #f39c12;
+    padding: 10px 10px;
+    background-color: rgba(243, 156, 18, 0.09);
+}
+.media{
+	margin-bottom: 15px;
+}
+.lelang .media-body{
+	font-size: 12px;
+}
+.media-left, .media-right, .media-body{
+	display: table-cell;
+    vertical-align: top;
+    position: relative;
+}
+.media-left{
+	/*padding-right: 20px;*/
+	text-align: left;
+	width: 30px;
+}
+.media-left i:before{
+	margin: 0;
+}
+.noticeMedia ul{
+	list-style: none;
+}
+.headerBid{
+	border: 1px solid #cdcdcd;
+	margin: -15px -15px 0px;
+	border-right: none;
+	border-left: none;
+}
+.headerBid ul li{
+	padding: 15px 15px;
+	display: inline-block;
+}
+.gr-text{
+	color: #27ae60;
+}
+.bodyBid{
+	border: 1px solid #cdcdcd;
+	margin: 0px -15px 0px;
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
+	overflow-x: scroll;
+}
+.auction-dash-table > tbody > tr{
+	border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+.auction-dash-table thead tr th,
+.auction-dash-table tbody tr td{
+	text-align: left;
+    padding: 10px;
+}
+.auction-dash-table tr td{
+    padding: 12px 20px;
+}
+.wrapperBid > div{
+	display: inline-block;
+	padding: 5px 0px;
+}
+.labelAuction {
+    width: 100px;
+    display: inline-block;
+}
+#auction-blocker{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 1);
+    top: 30px;
+    z-index: 3;
+    display: block;
+}
+
+#auction-blocker ol{
+		list-style-type: decimal;
+	}
+	#auction-blocker ul{
+		list-style-type: decimal;
+	}
+	#auction-blocker li{
+		list-style-type: decimal;
+		padding: 0 5px 3px 0;
+		text-align: justify;
+	}
+#penawaran-awal{
+	padding: 10px;
+}
+.auction-dash-table thead tr{
+	background-color: #f1f1f1;
+}

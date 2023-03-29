@@ -1,0 +1,168 @@
+
+@import "../6-utilities/initial-variables.scss";
+
+.folderGenerator {
+	width: 100%;
+	padding: 10px 10px;
+
+	.folderSection{
+
+		.col{
+			display: inline-block;
+		}
+		.folderAddition{
+			text-align: right;
+		}
+	}
+	.folderHeader{
+		border-bottom:  1px solid #ddd;
+		padding: 10px;
+	}
+	&-title {
+		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		border-bottom: 1px solid #ddd;
+
+		h1 {
+			font-weight: 500;
+			font-size: 25px;
+			padding-right: 25px;
+		}
+
+		.group-button-start {
+			margin-right: auto;
+		}
+
+		.group-button-end {
+			margin-left: auto;
+		}
+	}
+	
+	ul {
+		list-style: none;
+		
+		flex-wrap: wrap;
+		
+
+		li {
+			list-style: none;
+		}
+	}
+	.folderWrapperChild{
+		width: 100%;
+		display: flex;
+	}
+
+	.view-box {
+		margin: 10px;
+		background-color: #f8f8f8;
+		min-height: 150px;
+		border-radius: $radius;
+		border: 2px solid #ddd;
+
+		.view-item {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 17px;
+			cursor: pointer;
+
+			img {
+				height: 100px;
+			}
+
+			img:nth-child(2) {
+				opacity: 0;
+				display: none;
+				position: absolute;
+				height: 45px;
+				margin-top: 10px;
+				margin-left: 22px;
+			}
+
+			.caption {
+				padding-left: 15px;
+				line-height: 2rem;
+				font-size: 14px;
+				color: $grey;
+
+				p:nth-child(1) {
+					font-size: 20px;
+					font-weight: 600;
+				}
+			}
+		}
+
+		.viev-item:hover > img:last-child{
+			opacity: 1;
+			display: block;
+		}
+	}
+
+	.view-list {
+		width: 100%;	
+		border-bottom: 1px solid #ddd;
+
+		.view-item {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 10px;
+			cursor: pointer;
+
+			img {
+				height: 30px;
+			}
+
+			img:nth-child(2) {
+				opacity: 0;
+				display: none;
+				position: absolute;
+				height: 45px;
+				margin-top: 10px;
+				margin-left: 22px;
+			}
+
+			.caption {
+				padding-left: 15px;
+				line-height: 2rem;
+				font-size: 14px;
+				color: $grey;
+				display: flex;
+				flex-wrap: wrap;
+
+				p:nth-child(1) {
+					// font-size: 20px;
+					font-weight: 600;
+					display: inline-block;
+					width: 400px;
+				}
+
+				p:nth-child(2) {
+					width: 200px;
+				}
+
+				p:nth-child(3) {
+					width: 200px;
+				}
+			}
+		}
+	}
+
+	.view-list:hover {
+		background-color: #f8f8f8;
+	}
+
+	&-footer {
+		margin: 0 10px 3rem;
+		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+}

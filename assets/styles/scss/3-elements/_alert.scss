@@ -1,0 +1,26 @@
+@import '../6-utilities/initial-variables';
+
+.alert{
+  padding: 15px;
+  border: 1px solid transparent;
+  width: 100%;
+}
+.alert-danger {
+  background-color: #feefee;
+  border-color: #feefee;
+  color: #dc1a0c;
+}
+.alert-success {
+  background-color: #e2f2e2;
+  border-color: #e2f2e2;
+  color: #459a49;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-warning h3{
+   color: #8a6d3b;
+   margin-bottom: 10px;
+}

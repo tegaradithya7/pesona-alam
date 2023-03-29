@@ -1,0 +1,15 @@
+<svg id="room-facility-1" xmlns="http://www.w3.org/2000/svg" width="122.294" height="123.971" viewBox="0 0 122.294 123.971">
+  <g id="Group_737" data-name="Group 737" transform="translate(0 1.002)">
+    <g id="Group_714" data-name="Group 714" transform="translate(0 15.1)">
+      <path id="Path_4387" data-name="Path 4387" d="M25.041,93.115a5.188,5.188,0,0,1-1.345-.181,5.035,5.035,0,0,1-3.513-6.2L40.333,13.7a5.036,5.036,0,1,1,9.708,2.682L29.891,89.421A5.031,5.031,0,0,1,25.041,93.115Z" transform="translate(70.663 -9.992)" fill="#505f6b"/>
+      <path id="Path_4388" data-name="Path 4388" d="M33.183,93.122a5.029,5.029,0,0,1-4.85-3.7L8.183,16.382A5.036,5.036,0,1,1,17.891,13.7l20.15,73.038a5.035,5.035,0,0,1-3.513,6.2,4.625,4.625,0,0,1-1.345.189Z" transform="translate(-8 -9.998)" fill="#505f6b"/>
+      <path id="Path_4389" data-name="Path 4389" d="M113.773,33.111H83.552a15.11,15.11,0,1,0-30.221,0H23.11A15.126,15.126,0,0,0,8,48.222V58.293a5.033,5.033,0,0,0,5.039,5.039H123.851a5.032,5.032,0,0,0,5.032-5.039V48.222A15.126,15.126,0,0,0,113.773,33.111Zm5.039,20.15H18.071V48.222a5.043,5.043,0,0,1,5.039-5.039H56.1a4.412,4.412,0,0,0,1-.2,14.9,14.9,0,0,0,22.688.008,4.866,4.866,0,0,0,1,.2h32.986a5.043,5.043,0,0,1,5.039,5.039Z" transform="translate(-7.998 42.458)" fill="#505f6b"/>
+    </g>
+    <g id="Group_727" data-name="Group 727" transform="translate(30.222)" opacity="0.5">
+      <path id="Path_4390" data-name="Path 4390" d="M42.221,8,12,25.627,42.221,43.261,72.442,25.627Z" transform="translate(-12 -8)" fill="#505f6b"/>
+      <path id="Path_4391" data-name="Path 4391" d="M37.181,26.2V47.661L12,32.95V11.493Z" transform="translate(-12 14.897)" fill="#505f6b"/>
+      <path id="Path_4392" data-name="Path 4392" d="M41.848,11.493V32.95L16.667,47.661V26.2Z" transform="translate(18.592 14.897)" fill="#505f6b"/>
+    </g>
+  </g>
+  <rect id="Rectangle_218" data-name="Rectangle 218" width="119.839" height="123.971" transform="translate(2.456 0)" fill="none"/>
+</svg>

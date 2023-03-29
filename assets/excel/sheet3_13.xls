@@ -1,0 +1,31 @@
+
+
+    		<table cellpadding='0' cellspacing='0' border='1'>
+    			<tr><td colspan=7><font face='Arial'><h3>KRITERIA NILAI PRESTASI PENYEDIA BARANG/JASA</h3><h3>EVALUASI KINERJA PENYEDIA BARANG/JASA</h3></font></td></tr>
+    		</table>
+    		<br>
+    		<table cellpadding='0' cellspacing='0' border='1'>
+    			<tr><td>
+	    		<table cellpadding='0' cellspacing='0' border='0'>
+	    			<tr><td>a.</td><td>Nama Penyedia Barang/Jasa</td><td>:</td><td></td></tr>
+	    			<tr><td>b.</td><td>Alamat Penyedia Barang/Jasa</td><td>:</td><td>.........................</td></tr>
+	    			<tr><td>c.</td><td>Nama Paket Pekerjaan</td><td>:</td><td></td></tr>
+	    			<tr><td>d.</td><td>Nomor dan Tanggal Kontrak</td><td>:</td><td> / </td></tr>
+	    			<tr><td>e.</td><td>Bidang/Sub-Bidang Pekerjaan </td><td>:</td><td>.........................</td></tr>
+	    		</table>
+	    		</td></tr>
+    		</table>
+    		<br>
+    		<table cellpadding='0' cellspacing='0' border='1'>
+    			<tr><td><b>No</b></td><td><b>Uraian Pengurang</b></td><td><b>Nilai Pengurang</b></td></tr>
+    			<tr><td><b>1</b></td><td><b>Ketepatan Waktu Penyelesaian Pekerjaan, Terlambat Maksimal 55 Hari Kalender</b></td><td></td></tr><tr><td></td><td>Pekerjaan tepat waktu</td><td style='text-align: center;'>0&nbsp;</td></tr><tr><td></td><td>Pekerjaan terlambat &le; 30% dari jumlah hari keterlambatan maksimal</td><td style='text-align: center;'>10&nbsp;&#10004;</td></tr><tr><td></td><td>Pekerjaan terlambat > 30% s/d 100% dari jumlah hari keterlambatan maksimal</td><td style='text-align: center;'>17.5&nbsp;</td></tr><tr><td></td><td>Pekerjaan terlambat > 100% dari hari keterlambatan maksimal (tidak diputus Kontrak dan tetap melaksanakan pekerjaan)</td><td style='text-align: center;'>20&nbsp;</td></tr><tr><td><b>2</b></td><td><b>Tahapan Pekerjaan, Administrasi Pekerjaan, Penagihan Pembayaran, dan/atau Faktor Lainnya</b></td><td></td></tr><tr><td></td><td>Pekerjaan tidak pernah mendapat surat peringatan atau tidak mengalami kontrak kritis (SCM) dan/atau administrasi pekerjaan lengkap dan tepat waktu dan/atau Tagihan disampaikan maksimal 1 bulan setelah BAP/BAST dan/atau faktor lainnya</td><td style='text-align: center;'>0&nbsp;</td></tr><tr><td></td><td>Pekerjaan mendapat surat peringatan atau mengalami kontrak kritis (SCM) dan/atau administrasi pekerjaan lengkap tetapi tidak tepat waktu dan/atau tagihan disampaikan lewat dari 1 bulan setelah BAP/BAST dan/atau faktor lainnya</td><td style='text-align: center;'>5&nbsp;&#10004;</td></tr><tr><td><b>3</b></td><td><b>Kualitas Pekerjaan Secara Keseluruhan</b></td><td></td></tr><tr><td></td><td>Baik</td><td style='text-align: center;'>0&nbsp;</td></tr><tr><td></td><td>Cukup</td><td style='text-align: center;'>7.5&nbsp;&#10004;</td></tr><tr><td></td><td>Kurang (untuk pekerjaan yang terlambat dan/atau pekerjaan pernah mendapat surat peringatan atau mengalami kontrak kritis dan/atau administrasi pekerjaan tidak lengkap dan tidak tepat waktu dan/atau tagihan disampaikan lewat dari 1 bulan setelah Berita Acara Pemeriksaan/Berita Acara Serah Terima dan/atau faktor lainnya)</td><td style='text-align: center;'>15&nbsp;</td></tr>
+    			
+    		</table>
+    		<table cellpadding='0' cellspacing='0' border='0'>
+    			<tr><td>a.</td><td>Nilai Kinerja (NK) > 85  (delapan lima) s.d 100 (seratus) mendapakan predikat kinerja <b>"Baik"</b></td></tr>
+    			<tr><td>b.</td><td>Nilai Kinerja (NK) > 70  (tujuh puluh) s.d 85 (delapan lima) mendapakan predikat kinerja <b>"Cukup"</b></td></tr>
+    			<tr><td>c.</td><td>Nilai Kinerja (NK) > 60 (enam puluh) s.d 70 (tujuh puluh) mendapakan predikat kinerja <b>"Kurang"</b></td></tr>
+    			<tr><td>d.</td><td>Nilai Kinerja (NK) = 0 jika Penyedia Barang/Jasa dikenakan sanksi dimasukan dalam kelompok daftar hitam/blacklist</b></td></tr>
+    		</table>
+    		
+    	

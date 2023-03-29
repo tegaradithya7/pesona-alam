@@ -1,0 +1,11 @@
+@import '../6-utilities/initial-variables';
+
+.pajakWrapper{
+  padding: 20px;
+  .nested{
+    margin-left:20px;
+    li{
+      border-left: 1px solid #cdcdcd;
+    }
+  }
+}

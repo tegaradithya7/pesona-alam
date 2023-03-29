@@ -1,0 +1,314 @@
+@import '../6-utilities/initial-variables';
+.field {
+    width: 100%;
+    display: block;
+    font-size: 1em;
+    outline: none;
+
+    width: 100%;
+    box-sizing: border-box;
+    .title {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+        margin: 1.25rem auto;
+        color: #3273dc;
+    }
+    .label {
+        font-size: 15px;
+        color: darken(#ddd,30%);
+        position: relative;
+        float: left;
+    }
+    .label p {
+        font-size: 14px;
+        color: #ddd;
+        font-style: italic;
+    }
+    .alert-danger .input {
+        border: 1px solid #ff3860 !important;
+    }
+    .alert-danger p {
+        color: #ff3860;
+        font-size: 14px;
+    }
+    .alert-success .input {
+        border: 1px solid #23d160 !important;
+    }
+    .alert-success p {
+        color: #23d160;
+        font-size: 14px;
+    }
+    .alert-primary p {
+        color: #3273dc;
+        font-size: 14px;
+        font-weight: 500;
+        float: right;
+        padding-top: 10px;
+        margin-left: auto;
+    }
+    .alert-primary {
+        padding-bottom: 1.25rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .is-center {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+}
+.form {
+    .form-group { 
+        width: 100%;
+        display: block;
+        a {
+            margin-right: auto;
+        }
+        input {
+            font-size: 17px;
+            color: #121212;
+            padding: 5px 10px;
+        }
+        [type="file"] {
+            width: 70%;
+            display: inline-block;
+        }
+        [type="number"] {
+            width: 70%;
+            display: inline-block;
+        }
+        p {
+            margin-right: 20px;
+        }
+        .input {
+            margin-top: 5px;
+            width: calc(100% - 10px * 2);
+            border: 1px solid #ddd;
+            outline: none;
+            border-radius: 2px;
+        }
+        .input:focus {
+            border: 1px solid #3273dc;
+        }
+        .input-mandatory {
+            background-color: #ffe78a;
+            @include placeholder {
+                color: darken(#ddd,30%);
+            }
+        }
+        .input-disabled {
+            background-color: #e0e0e0;
+            cursor: no-drop;
+            @include placeholder {
+                color: darken(#ddd,30%);
+            }
+        }
+        button {
+            font-size: 15px;
+        }
+        .select {
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            vertical-align: top;
+            select {
+                background-color: white;
+                border-color: #dbdbdb;
+                color: #363636;
+                cursor: pointer;
+                display: block;
+                font-size: 1em;
+                outline: none;
+                padding: 5px 2.75rem;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            select:hover {
+                border-color: #b5b5b5;
+            }
+        }
+        .date-picker {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .date-picker select:nth-child(1) {
+            padding: 5px .5rem;
+            width: 60px;
+        }
+        .date-picker select:nth-child(2) {
+            padding: 5px .5rem;
+            width: 120px;
+        }
+        .date-picker select:nth-child(3) {
+            padding: 5px .5rem;
+            width: 80px;
+        }
+        .currency {
+            position: relative;
+            width: 0%;
+            left: -115px;
+            display: inline-block;
+        }
+        .money-asing {
+            width: 20%;
+        }
+        .dateRange {
+            width: 10%;
+        }
+        input[type="text"].dateRange {
+            width: 29.5%;
+        }
+        input[type="money_asing"].money-asing {
+            width: 50%;
+        }
+        input[type="text"].money  {
+            width: 67%; 
+        }
+        > label {
+            margin-right: auto;
+            width: calc(30% - 20px);
+            display: inline-block;
+            word-wrap: break-word;
+            padding-left: 15px;
+            padding-right: 5px;
+            float: left;
+        }
+        .form-caption {
+            font-size: 14px;
+            color: #adacac;
+            width: 100%;
+            display: block;
+            font-style: italic;
+            float: left;
+            padding-left: 15px;
+        }
+        input[type="text"], select, textarea {
+            margin-left: auto;
+            width: 70%;
+            display: inline-block;
+        }
+        .wrapper, .radioWrapper, .checkboxWrapper {
+            margin-left: auto;
+            width: 70%;
+            display: inline-block;
+        }
+        .wrapper input[type="text"] {
+            width: 100%;
+        }
+    }
+    .form-group:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+.display-info {
+    display: flex;
+    flex-wrap: wrap;
+    .title {
+        width: 100%;
+    }
+    .label {
+        width: 50%;
+        font-size: 19px;
+        color: #121212;
+    }
+    .control {
+        width: 50%;
+    }
+    .control p {
+        display: inline-block;
+    }
+}
+.captcha-area {
+    display: block;
+    height: 130px;
+    width: 250px;
+    border: 1px solid #c4c4c4;
+    background-color: #ddd;
+}
+.form-start, .form-end {
+    width: calc(100% - 20px * 2);
+    padding: 20px;
+}
+
+.form-group {
+  width: 100%;
+  display: block; }
+  .form-group .currency {
+    position: relative;
+    width: 0%;
+    left: -115px;
+    display: inline-block; }
+  .form-group .money {
+    width: 70%; }
+    .form-group .dateRange {
+        width: 60px;
+    }
+  .form-group > label {
+    margin-right: auto;
+    width: calc(30% - 20px);
+    display: inline-block;
+    word-wrap: break-word; ;
+    padding-left: 15px;
+    padding-right: 5px;
+    vertical-align: middle; 
+
+    .english-caption {
+      font-size: 14px;
+      color: #adacac;
+      width: 100%;
+      display: block;
+      font-style: italic;
+    }
+
+  }
+  .form-group input[type="text"],
+  .form-group input[type="password"], 
+  .form-group input[type="file"], 
+  .form-group select, 
+  .form-group textarea {
+    margin-left: auto;
+    width: 70%;
+    display: inline-block; }
+  .form-group .wrapper, .form-group .radioWrapper, .form-group .checkboxWrapper {
+    margin-left: auto;
+    width: 70%;
+    display: inline-block; }
+    .form-group .wrapper input {
+      width: 100%; }
+
+  .label-warning,
+  .label-success,
+  .label-danger {
+    padding: 8px 4px;
+    border-radius: 4px;
+    margin-right: 15px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    transition: all .3s;
+  }
+
+  .label-warning:hover ,
+  .label-success:hover ,
+  .label-danger:hover {
+    transform: translate(0,-10px);
+    position: relative;
+  }
+
+
+.btnMargin {
+    padding: 10px;
+}
+.fileUploadBlock {
+}
+.form-error .error-help {
+    color: #e74c3c;
+    display: block;
+    padding-left: calc(30% - 20px);
+}
+
+.filterChooseGroup {
+    width: 345px;
+    float: right;
+}

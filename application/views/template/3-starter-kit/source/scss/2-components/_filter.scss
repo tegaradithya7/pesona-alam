@@ -1,0 +1,33 @@
+@import '6-utilities/initial-variables';
+
+$black : rgb(0,0,0);
+
+.filterBlock {
+	display: block;
+	position: fixed;
+	z-index: 1040;
+	right: 0;
+	top: 0;
+	width: 500px;
+	height: 100%;
+	box-shadow: 0 2px 3px rgba($black, .5);
+
+	.filterHeader {
+		padding: 15px;
+		display: flex;
+		align-items: center;
+		width: 100%;
+
+		.headerStart {
+			margin-right: auto;
+
+			h1 {
+				
+			}
+		}
+
+		.headerEnd {
+			margin-left: auto;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+@import '6-utilities/initial-variables';
+
+.pagination {
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2); }
+  .pagination li {
+    padding: 0 10px; }
+  .pagination li:hover {
+    background-color: #f8f8f8; }
+  .pagination li:first-child {
+    border-right: 1px solid #ddd; }
+  .pagination li:last-child {
+    border-left: 1px solid #ddd; }

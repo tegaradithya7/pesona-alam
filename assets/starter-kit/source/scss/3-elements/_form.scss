@@ -1,0 +1,189 @@
+@import "../6-utilities/initial-variables.scss";
+$border : 1px solid;
+
+$input-mandatory : lighten(nth($warning,1), 10%);
+$input-disabled : lighten($grey, 40%);
+
+.field {
+	width: 100%;
+	padding: 20px;
+	background-color: #fff;
+	display: block;
+	border-radius: $radius;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+	.title {
+		text-align: center;
+		font-size: 25px;
+		font-weight: 500;
+		margin: 1.25rem auto;
+		color: nth($primary,1);
+	}
+
+	.label {
+		font-size: 15px;
+		color: $grey-light;
+		position: relative;
+
+		p {
+			font-size: 14px;
+			color: #ddd;
+			font-style: italic;
+		}
+	}
+
+	.control {
+		position: relative;
+
+		a {
+			margin-right: auto;
+		}
+
+		input {
+			font-size: 17px;
+			color: $black-bis;
+			padding: 5px 2px;
+		}
+
+		p {
+			margin-right: 20px;
+		}
+		
+		.input {
+			margin-top: 5px;
+			width: 90%;
+			border: $border #ddd;
+			outline: none;
+			border-radius: $radius-small;
+		}
+
+		.input:focus {
+			border: $border nth($primary,1);
+		}
+
+		.input-mandatory {
+			background-color: $input-mandatory;
+		}
+
+		.input-disabled {
+			background-color: $input-disabled;
+			cursor: no-drop;
+		}
+
+		button {
+			font-size: 15px;
+		}
+
+		.select {
+			display: inline-block;
+			max-width: 100%;
+			position: relative;
+			vertical-align: top;
+
+			select {
+			  background-color: white;
+			  border-color: #dbdbdb;
+			  color: #363636;
+			  cursor: pointer;
+			  display: block;
+			  font-size: 1em;
+			  outline: none;
+			  padding: 5px 2.75rem;
+			  width: 200px;
+			}
+
+			select:hover {
+			  border-color: #b5b5b5;
+			}
+		}
+
+		.date-picker {
+			display: flex;
+			flex-wrap: wrap;
+
+			select:nth-child(1) {
+				padding: 5px .5rem;
+				width: 60px;
+			}
+			select:nth-child(2) {
+				padding: 5px .5rem;
+				width: 120px;
+			}
+			select:nth-child(3) {
+				padding: 5px .5rem;
+				width: 80px;
+			}
+		}
+
+	}
+
+	.is-center {
+		width: 100%!important;
+		display: flex;
+		justify-content: center;
+	}
+
+	.control:not(:last-child) {
+		margin-bottom: 1.25rem;
+	}
+
+	.alert-danger {
+
+		.input {
+			border: $border nth($danger,1)	!important;
+		}
+
+		p {
+			color: nth($danger,1);
+			font-size: 14px;
+		}
+	}
+
+	.alert-success {
+
+		.input {
+			border: $border nth($success,1)!important;
+		}
+
+		p {
+			color: nth($success,1);
+			font-size: 14px;
+		}
+	}
+}
+
+.display-info {
+	display: flex;
+	flex-wrap: wrap;
+
+	.title {
+		width: 100%;
+	}
+
+	.label {
+		width: 50%;
+		font-size: 19px;
+		color: $black-bis;
+	}
+
+	.control {
+		width: 50%;
+
+		p {
+			display: inline-block;
+		}
+	}
+}
+
+.captcha-area {
+	display: block;
+	height: 130px;
+	width: 250px;
+	border: 1px solid darken(#ddd, 10%);
+	background-color: #ddd;
+}
+
+
+
+
+

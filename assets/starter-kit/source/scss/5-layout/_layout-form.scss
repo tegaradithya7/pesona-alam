@@ -1,0 +1,63 @@
+
+.form-signup {
+	margin-top: 5rem;
+	display: flex;
+	justify-content: center;
+}
+
+
+//  C U S T O M I Z E A B L E
+.bg-shape {
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	top: 0;
+}
+
+.control:last-child {
+	margin-bottom: 3rem;
+}
+
+.form-login {
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: 0 4px 16px 0 rgba(0,0,0,0.4);
+	display: flex;
+	flex-wrap: wrap;
+	height: 300px;
+	max-height: 350px;
+	border-radius: $radius-large;
+	transition: 0.5s;
+	position: absolute;
+	top: 12rem;
+
+	.group-start {
+		width: 40%;
+
+		img {
+			height: 200px;	
+			position: absolute;	
+			margin-left: 50px;	
+			margin-top: 50px;	
+		}
+	}
+
+	.group-end {
+		align-self: center;
+		width: 60%;
+	}
+}
+
+.form-login:hover {
+  	background-position: right center; /* change the direction of the change here */
+}
+
+//  F O R M S I G N U P
+
+.form-start, .form-end {
+	width: 93.5%;
+	max-height: 540px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+}

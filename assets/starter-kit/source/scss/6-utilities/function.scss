@@ -1,0 +1,24 @@
+// $colors: (
+//     1: #8e3329,
+//     2: #d9534f,
+//     3: #c9302c,
+//     4: #d98328,
+//     5: #dd8f3d,
+//     6: #c57623,
+//     7: #5a1321,
+//     8: #7b1a2d,
+//     9: #51111e,
+//     10: #191919,
+//     11: #333333,
+//     12: #111111,
+// );
+
+// @function scotch-color($key) {
+//   @return map-get($colors, $key);
+// }
+
+// @for $i from 1 through length($colors) {
+//     .col:nth-child(#{length($colors)}n+#{$i}) {
+//         background: scotch-color($i);
+//     }
+// }

@@ -1,0 +1,160 @@
+@import "../6-utilities/initial-variables.scss";
+
+.content {
+	width: 100%;
+	background-color: $white;
+	position: relative;
+	margin-top: 4.2rem;
+}
+
+.container {
+	width: 100%;
+	margin: 0 10px;
+
+	&-title {
+		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		border-bottom: 1px solid #ddd;
+
+		h1 {
+			font-weight: 500;
+			font-size: 25px;
+			padding-right: 25px;
+		}
+
+		.group-button-start {
+			margin-right: auto;
+		}
+
+		.group-button-end {
+			margin-left: auto;
+		}
+	}
+	
+	ul {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+
+		li {
+			list-style: none;
+		}
+	}
+
+	.view-box {
+		margin: 10px;
+		background-color: #f8f8f8;
+		min-height: 150px;
+		border-radius: $radius;
+		border: 2px solid #ddd;
+
+		.view-item {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 17px;
+			cursor: pointer;
+
+			img {
+				height: 100px;
+			}
+
+			img:nth-child(2) {
+				opacity: 0;
+				display: none;
+				position: absolute;
+				height: 45px;
+				margin-top: 10px;
+				margin-left: 22px;
+			}
+
+			.caption {
+				padding-left: 15px;
+				line-height: 2rem;
+				font-size: 14px;
+				color: $grey;
+
+				p:nth-child(1) {
+					font-size: 20px;
+					font-weight: 600;
+				}
+			}
+		}
+
+		.viev-item:hover > img:last-child{
+			opacity: 1;
+			display: block;
+		}
+	}
+
+	.view-list {
+		width: 100%;
+		margin: 5px 10px;
+		// background-color: #f3f3f3;
+		// min-height: 150px;
+		// border-radius: $radius;
+		border-bottom: 1px solid #ddd;
+
+		.view-item {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 5px;
+			cursor: pointer;
+
+			img {
+				height: 30px;
+			}
+
+			img:nth-child(2) {
+				opacity: 0;
+				display: none;
+				position: absolute;
+				height: 45px;
+				margin-top: 10px;
+				margin-left: 22px;
+			}
+
+			.caption {
+				padding-left: 15px;
+				line-height: 2rem;
+				font-size: 14px;
+				color: $grey;
+				display: flex;
+				flex-wrap: wrap;
+
+				p:nth-child(1) {
+					// font-size: 20px;
+					font-weight: 600;
+					display: inline-block;
+					width: 400px;
+				}
+
+				p:nth-child(2) {
+					width: 200px;
+				}
+
+				p:nth-child(3) {
+					width: 200px;
+				}
+			}
+		}
+	}
+
+	.view-list:hover {
+		background-color: #f8f8f8;
+	}
+
+	&-footer {
+		margin: 0 10px 3rem;
+		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+}

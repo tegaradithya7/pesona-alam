@@ -1,0 +1,33 @@
+
+
+    		<table cellpadding='0' cellspacing='0' border='1'>
+    			<tr><td colspan=7><font face='Arial'><h3>NILAI KINERJA PENYEDIA BARANG/JASA</h3><h3>EVALUASI KINERJA PENYEDIA BARANG/JASA</h3></font></td></tr>
+    		</table>
+    		<br>
+    		<table cellpadding='0' cellspacing='0' border='1'>
+    			<tr><td>
+	    		<table cellpadding='0' cellspacing='0' border='0'>
+	    			<tr><td>a.</td><td>Nama Penyedia Barang/Jasa</td><td>:</td><td>PT Dekodr Solusi</td></tr>
+	    			<tr><td>b.</td><td>Alamat Penyedia Barang/Jasa</td><td>:</td><td>.........................</td></tr>
+	    			<tr><td>c.</td><td>Nama Paket Pekerjaan</td><td>:</td><td>Pengadaan Sewa Notebook dan Komputer</td></tr>
+	    			<tr><td>d.</td><td>Nomor dan Tanggal Kontrak</td><td>:</td><td>123 / 2018-02-22</td></tr>
+	    			<tr><td>e.</td><td>Bidang/Sub-Bidang Pekerjaan </td><td>:</td><td>.........................</td></tr>
+	    		</table>
+	    		</td></tr>
+    		</table>
+    		<br>
+    		<table cellpadding='0' cellspacing='0' border='1'>
+    			<tr><td><b>No</b></td><td><b>Kriteria</b></td><td><b>Nilai Evaluasi</b></td><td><b>Keterangan</b></td></tr>
+    			<tr><td>1</td><td><b>Nilai Pengurang, NP</b></td><td>22</td><td></td></tr>
+    			<tr><td>2</td><td><b>Nilai Kinerja, NK (NK = 100 - NP)</b></td><td>78</td><td>Cukup</td></tr>
+    			<tr><td colspan=4>Catatan</td></tr>
+    		</table>
+    		<table cellpadding='0' cellspacing='0' border='0'>
+    			<tr><td >Jakarta, 11 Desember 2017</td></tr>
+    			<tr><td >Division Head,...............................</td></tr>
+    			<tr></tr>
+    			<tr></tr>
+    			<tr></tr>
+    			<tr><td >(................................)</td></tr>
+    		</table>
+    	
